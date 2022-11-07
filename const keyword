@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+const int a=10;
+a=112;
+printf("%d",a);
+}
+OUTPUT :
+main.c: In function ‘main’:
+main.c:6:2: error: assignment of read-only variable ‘a’
+    6 | a=112;
+      |  ^
+ 
+ 
+ #include<stdio.h>
+ int main()
+{
+const int a=10;
+printf("%d",a);
+}     
+      
+      
