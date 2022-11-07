@@ -18,6 +18,20 @@ main.c:6:2: error: assignment of read-only variable ‘a’
 {
 const int a=10;
 printf("%d",a);
-}     
+}  
+
+we can change using pointers:
+
+#include<stdio.h>
+int main()
+{
+const int a=10;
+int *ptr=(int*)&a;
+*ptr=20;
+
+printf("%d",a);
+}
+output :
+20
       
       
