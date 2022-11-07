@@ -7,3 +7,14 @@ int main()
     *ptr=10;
 printf("%d",val);
 }
+
+
+#include<stdio.h>
+enum months{mon,tue,wed,thu,fri,sat};
+int main()
+{
+for(int i=mon;i<sat;i++)
+{
+    printf("%d",i);
+}
+}
