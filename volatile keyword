@@ -1,0 +1,9 @@
+#include<stdio.h>
+ 
+int main()
+{
+    volatile const int  val=30;
+    int *ptr=(int*)&val;
+    *ptr=10;
+printf("%d",val);
+}
