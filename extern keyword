@@ -1,1 +1,64 @@
+#include<stdio.h>
+int a=10;
+int main()
+{
+    extern int a;
+    a++;
+    printf("%d",a);
+}
+
+#include<stdio.h>
+extern int a=10;
+int main()
+{
+    a++;
+    printf("%d",a);
+}
+#include<stdio.h>
+int main()
+{
+  extern int a;
+  extern int b;
+  printf("%d\n",a);
+  printf("%d",b);
+}
+error :/kk.c:4:14: error: 'extern' variable cannot have an initializer
+  extern int a=10;
+             ^
+./kk.c:5:14: error: 'extern' variable cannot have an initializer
+  extern int b=10;
+  
+  #include<stdio.h>
+int main()
+{
+  extern int a;
+  extern int b;
+  printf("%d\n",a);
+  printf("%d",b);
+}
+
+  
+  error:
+  
+  ./kiran.c:3:5: error: redefinition of 'a'
+int a=7;
+    ^
+./kiran.c:2:5: note: previous definition is here
+int a=8;
+
+
+file one :
+#include<stdio.h>
+int main()
+{
+  extern int a;
+  extern int b;
+  printf("%d\n",a);
+  printf("%d",b);
+}
+file two:
+int a=10;
+int b=20;
+we can access through the program 
+
 
