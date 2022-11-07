@@ -1,1 +1,24 @@
-
+#include<stdio.h>
+ 
+int fun()
+{
+    int a=10;
+    a++;
+    printf("%d \n",a);
+}
+int fun1()
+{
+    static int a;
+    a++;
+    printf("%d \n",a);
+    
+}
+int main()
+{
+ 
+ fun();
+ fun();
+ fun1(); //1st time 1
+ fun1();// 2nd time 2
+ fun1();// 3rd time 3
+}
