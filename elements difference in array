@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a[]={1000,4,5,6,722,11,55,77,999};
+    int a[]={1000,4,5,6,722,11,55,77,999},c,d;
     int n=sizeof(a)/sizeof(a[0]);
     int diff=0;
     for(int i=0;i<n;i++)
@@ -11,13 +11,15 @@ int main()
         {
             if(a[i]-a[j]>diff)
             {
-             diff=a[i]-a[j]; 
+             diff=a[i]-a[j];
+             c=a[i]; //high number in array
+             d=a[j];// leatest number in array
             }
         }
         
     }
  
-        printf("%d",diff);
+        printf("%d\n",diff);
+        printf("%d %d",c,d);
     
 }
-    
